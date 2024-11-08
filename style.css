@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,900;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Stylish&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+
+nav {
+    /* height: 52px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(250, 250, 251);
+    box-shadow: 0px 5px 10px 0px #aaa;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-size: 19.2px;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: purple;
+    transition: all 0.5s ease-in-out;
+}
+
+nav .logo {
+    margin: 8px;
+    font-size: 1.3rem;
+    color: rebeccapurple;
+    box-shadow: 0px 5px 10px 0px rebeccapurple;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav .logo h1 {
+    padding: 0px 10px;
+}
+
+header {
+    height: 50vh;
+    background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)),
+        url(https://i.postimg.cc/wT3TQS3V/header-image2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header-text h1 {
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.header-text p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.header-text button {
+    background-color : rgb(22, 160, 131);
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: none;
+    font-size: 25px;
+    margin: 40px 0px 0px 0px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    box-shadow: 0px 5px 10px 0px rgb(1, 39, 10);
+}
+
+.header-text button a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-text button:hover {
+    background-color: rgba(14, 108, 88, 0.954);
+}
+
+.mains {
+    background-color: rgb(245, 245, 247);
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 85vw;
+    margin: auto;
+    height: 100vh;
+}
+
+@keyframes image {
+    from {
+        transform: translate(500px);
+    }
+
+    to {}
+}
+
+@keyframes text {
+    from {
+        transform: translate(-500px);
+    }
+
+    to {}
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 30px;
+    animation: text 2s ease-in-out 0.5s;
+}
+
+.main-img img {
+    display: block;
+    height: 400px;
+    object-fit: cover;
+    object-position: right center;
+    margin: auto;
+    animation: image 2s ease-in-out 0.5s;
+}
+
+.main-text p {
+    font-size: 19px;
+    color: rgb(102, 102, 102);
+}
+
+.main-text h1 {
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.main-text h5 {
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+}
+
+.category {
+    width: 90vw;
+    margin: auto;
+}
+
+.category h1 {
+    color: rgb(85, 85, 85);
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin: 80px 0px 50px 0px;
+    text-transform: uppercase;
+}
+
+.category-img {
+    display: flex;
+    gap: 15px;
+}
+
+.category-img img {
+    display: block;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: center center;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.menu {
+    width: 85vw;
+    margin: 130px auto 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu h1 {
+    text-align: center;
+    color: rgb(85, 85, 85);
+    font-size: 54px;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.item img {
+    display: block;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    background-position: center center;
+}
+
+.item {
+    display: flex;
+    margin: 43px 0px;
+}
+
+.item-description {
+    align-self: center;
+    padding-left: 40px;
+}
+
+.item-description h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.item-description p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.item-description h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(17, 121, 100);
+}
+
+.testimonials {
+    background-color: rgb(243, 243, 243);
+    padding: 0px 0px 100px 0px;
+}
+
+.testimonial {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+}
+
+.testimonials h1 {
+    color: rgb(85, 85, 85);
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    padding: 80px 0px 40px 0px;
+}
+
+.customer-img img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.customer-text h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.customer-text p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(68, 68, 68);
+    padding: 11px 0px;
+}
+
+footer {
+    background-color: rgb(226, 226, 226);
+    padding: 75px 0px;
+}
+
+.contact {
+    background-color: white;
+    width: 89vw;
+    margin: auto;
+    display: flex;
+}
+
+.contact img {
+    display: block;
+    height: 400px;
+    width: 50%;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.contact-us {
+    width: 80vw;
+    margin: 0px 15px 0px 15px;
+}
+
+.contact-us h1 {
+    font-size: 43px;
+    font-weight: 500;
+    color: rgb(68, 68, 68);
+}
+
+.contact-us button {
+    color: white;
+    background-color: rgb(22, 160, 131);
+    font-size: 21px;
+    font-weight: 400;
+    padding: 15px 30px;
+    margin: 15px 0px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    box-shadow: 0px 5px 10px 0px rgb(1, 39, 10);
+}
+
+.contact-us button:hover {
+    background-color: rgb(18, 122, 100);
+}
+
+.contact-us .form {
+    display: block;
+    width: 100%;
+    margin-bottom: 22px;
+    color: rgb(68, 68, 68);
+    font-weight: 500;
+    border-style: none none solid;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    padding: 20px 0px;
+}
+
+.contact-us .text-area {
+    display: block;
+    width: 100%;
+    border-style: none none solid;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    padding: 15px 0px 75px 0px;
+}
+
+.end {
+    background-color: rgb(65, 65, 65);
+}
+
+.end h2 {
+    font-size: 29px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    padding: 40px 0px;
+}
+
+@media screen and (max-width:500px) {
+    .item img {
+        align-self: center;
+    }
+
+    .item {
+        flex-direction: column;
+    }
+
+    .item-description {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .menu h1 {
+        font-size: 50px;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .testimonials h1 {
+        font-size: 40px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact img {
+        width: 100%;
+    }
+
+    .contact-us h1 {
+        font-size: 39px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .main-text p {
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    main {
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .category-img {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .main-text h1 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .main-img img {
+        display: block;
+        height: 300px;
+        object-fit: cover;
+        object-position: right center;
+        margin: auto;
+        max-width: 90%;
+    }
+
+    .main-text h5 {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(85, 85, 85);
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 85vw;
+        margin: auto;
+        height: auto;
+    }
+}
